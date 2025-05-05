@@ -1,0 +1,369 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #5a2a2a; /* Цвет, ассоциирующийся с историей или музеем */
+}
+
+a {
+    text-decoration: none;
+    color: #5a2a2a;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для header */
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+    padding: 10px 0;
+    position: fixed; /* Фиксированное положение */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Поверх остального контента */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Размер логотипа */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #333;
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom-color: #5a2a2a;
+    text-decoration: none;
+}
+
+/* Стили для секции hero */
+.hero {
+    position: relative;
+    height: 600px; /* Высота секции */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden; /* Скрываем все, что выходит за пределы секции */
+    margin-top: 70px; /* Отступ от фиксированного хедера */
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* Начало внедрения "объемности" - эффект параллакса */
+    transform: translateZ(0); /* Ускорение рендеринга */
+}
+
+.hero .container {
+    position: relative; /* Для позиционирования контента поверх фона */
+    z-index: 10;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #5a2a2a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #7a3a3a;
+    text-decoration: none;
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 2px solid #5a2a2a;
+    color: #5a2a2a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #5a2a2a;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Стили для секции about */
+.about {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+/* Стили для секции exhibitions */
+.exhibitions {
+    padding: 60px 0;
+}
+
+.exhibition-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивная сетка */
+    gap: 20px;
+}
+
+.exhibition-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Начало внедрения "объемности" - небольшая тень */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exhibition-item:hover {
+    transform: translateY(-5px); /* Небольшой подъем при наведении */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.exhibition-item img {
+    max-width: 100%;
+    height: 200px; /* Фиксированная высота изображений */
+    object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.exhibition-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Стили для footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.virtual-tour {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Другой фон */
+    text-align: center;
+}
+
+.virtual-tour-container {
+    width: 100%;
+    max-width: 1000px; /* Возможно, другая максимальная ширина */
+    margin: 20px auto;
+    position: relative;
+    /* Используйте padding-bottom для адаптивной высоты */
+    padding-bottom: 65%; /* Например, соотношение сторон 4:3 (3/4 * 100%) или другое, в зависимости от тура */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.virtual-tour-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.contact-info {
+    padding: 60px 0;
+    background-color: #f8f8f8; /* Или выберите цвет, который подходит вашему дизайну */
+    text-align: center;
+}
+
+.contact-info .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.contact-info h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333; /* Или выберите цвет, который подходит вашему дизайну */
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    background-color: #fff; /* Или выберите цвет, который подходит вашему дизайну */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ .contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact-item i {
+    font-size: 40px;
+    color: #007bff; /* Или выберите цвет, который подходит вашему бренду */
+    margin-bottom: 15px;
+}
+
+.contact-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #555; /* Или выберите цвет, который подходит вашему дизайну */
+}
+
+.contact-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666; /* Или выберите цвет, который подходит вашему дизайну */
+}
+
+.contact-item a {
+    color: #007bff; /* Или выберите цвет, который подходит вашему бренду */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #0056b3; /* Цвет при наведении */
+    text-decoration: underline;
+}
+
+.hours-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.hours-item ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 40px 0;
+    }
+
+    .contact-info h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-item {
+        padding: 20px;
+    }
+
+    .contact-item i {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .contact-item h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .contact-item p,
+    .hours-item ul li {
+        font-size: 15px;
+    }
+
+    .hero {
+        height: 400px; /* Меньшая высота на мобильных */
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column; /* Навигация в столбец на мобильных */
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    .exhibition-list {
+        grid-template-columns: 1fr; /* Одна колонка на мобильных */
+    }
+}

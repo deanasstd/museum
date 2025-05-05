@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МБУК «Музей истории города Самары им. М.Д. Челышова»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- Логотип музея -->
+                <img src="images/logo.jpg" alt="Логотип Музея истории города Самары">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О музее</a></li>
+                    <li><a href="#">Экспозиции</a></li>
+                    <li><a href="#">События</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background" style="background-image: url('images/i.jpg');"></div>
+            <div class="container">
+                <h1>Добро пожаловать в Музей истории города Самары</h1>
+                <p>Узнайте богатую историю нашего города через уникальные экспонаты.</p>
+                <a href="#" class="btn">Посетить онлайн</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>О музее</h2>
+                <p>Муниципальное бюджетное учреждение культуры "Музей истории города Самары имени М.Д. Челышова" было создано по иницитиве общественности города, Самарского Епархиального Управления Русской Православной Церкви, Самарского купеческого Собрания, Самарского Губернского Дворянского Собрания и Волжского Казачьего Войска 1997 году. Цель создания музея заключалась в сохранении помяти о выдающихся личноcтях Самары и деятелях, внесших значительный вклад в развитие города.</p>
+                <a href="#" class="btn-outline">Подробнее</a>
+            </div>
+        </section>
+
+        <section class="exhibitions">
+            <div class="container">
+                <h2>Экспозиции</h2>
+                <div class="exhibition-list">
+                    <div class="exhibition-item">
+                        <img src="images/us.png" alt="Экспозиция 1">
+                        <h3>Основные вехи в истории города.</h3>
+                        <p>Здесь представлены портреты людей основавших город Самару.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="exhibition-item">
+                        <img src="images/st.png" alt="Экспозиция 2">
+                        <h3>Архитектурные династии, Волжское казачество,Самарское знамя.</h3>
+                        <p>В музее представлены фото династии архитекторов.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="exhibition-item">
+                        <img src="images/_.jpg.webp" alt="Экспозиция 2">
+                        <h3>Дворянство.Купечетво.</h3>
+                        <p>Здесь представлена родословное дерево князей Хованских и Перхуровых.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="exhibition-item">
+                        <img src="images/n.png" alt="Экспозиция 2">
+                        <h3>Параходство,самалето и ракетостроение.</h3>
+                        <p>Первый параход, выдающиеся личности и многое другое.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="exhibition-item">
+                        <img src="images/ku.png" alt="Экспозиция 2">
+                        <h3>Куйбышев запасная столица.</h3>
+                        <p>Зал временной выставки посвящен ВОВ "Куйбышев запасная столица".</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="exhibition-item">
+                        <img src="images/qq.webp" alt="Экспозиция 2">
+                        <h3>История Самарской епархии.</h3>
+                        <p>Портреты епископов и архиепископов с 1851г. по нынешнее время.</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="virtual-tour">
+            <div class="container">
+               <h2>Виртуальный тур по музею</h2>
+               <p>Погрузитесь в атмосферу музея, не выходя из дома.</p>
+                 <div id="external-tour-container" class="virtual-tour-container">
+                    <iframe src="https://tourmalin.github.io/history-persons/" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+                 </div>
+           </div>
+        </section>
+
+        <!-- Добавить другие секции  -->
+
+    </main>
+    <section class="contact-info">
+        <div class="container">
+            <h2>Контакты и часы работы</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Адрес</h3>
+                    <p>г. Самара, ул. Фрунзе, д.49 </p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Телефон</h3>
+                    <p><a href="tel:8(846)332-75-17">8(846)332-75-17</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:museum1586@yandex.ru">museum1586@yandex.ru</a></p>
+                </div>
+                <div class="contact-item hours-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Часы работы</h3>
+                    <ul>
+                        <li>Понедельник: Выходной</li>
+                        <li>Вторник - Суббота: 10:00-18:00</li>
+                        <li>Воскресенье - Пятница: Выходной</li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> сайт создан в учебных целях в рамках выпускной квалификационной работы. Все материалы использованны в некоммерческих целях и принадлежат авторам, а также регламентируется статьями 1274/1276 ГК РФ</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

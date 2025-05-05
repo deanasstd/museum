@@ -14,7 +14,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: #5a2a2a; /* Цвет, ассоциирующийся с историей или музеем */
+    color: #5a2a2a; 
 }
 
 a {
@@ -26,15 +26,15 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Стили для header */
+
 header {
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 10px 0;
-    position: fixed; /* Фиксированное положение */
+    position: fixed; 
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 100; /* Поверх остального контента */
+    z-index: 100; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -45,7 +45,7 @@ header .container {
 }
 
 .logo img {
-    height: 50px; /* Размер логотипа */
+    height: 50px; 
 }
 
 nav ul {
@@ -72,17 +72,17 @@ nav a:hover {
     text-decoration: none;
 }
 
-/* Стили для секции hero */
+
 .hero {
     position: relative;
-    height: 600px; /* Высота секции */
+    height: 600px; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-    overflow: hidden; /* Скрываем все, что выходит за пределы секции */
-    margin-top: 70px; /* Отступ от фиксированного хедера */
+    overflow: hidden; 
+    margin-top: 70px; 
 }
 
 .hero-background {
@@ -93,12 +93,11 @@ nav a:hover {
     height: 100%;
     background-size: cover;
     background-position: center;
-    /* Начало внедрения "объемности" - эффект параллакса */
-    transform: translateZ(0); /* Ускорение рендеринга */
+    transform: translateZ(0); 
 }
 
 .hero .container {
-    position: relative; /* Для позиционирования контента поверх фона */
+    position: relative; 
     z-index: 10;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -144,20 +143,20 @@ nav a:hover {
 }
 
 
-/* Стили для секции about */
+
 .about {
     padding: 60px 0;
     background-color: #fff;
 }
 
-/* Стили для секции exhibitions */
+
 .exhibitions {
     padding: 60px 0;
 }
 
 .exhibition-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивная сетка */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
 }
 
@@ -167,21 +166,21 @@ nav a:hover {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    /* Начало внедрения "объемности" - небольшая тень */
+    
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .exhibition-item:hover {
-    transform: translateY(-5px); /* Небольшой подъем при наведении */
+    transform: translateY(-5px); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 
 .exhibition-item img {
     max-width: 100%;
-    height: 200px; /* Фиксированная высота изображений */
-    object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+    height: 200px; 
+    object-fit: cover; 
     margin-bottom: 15px;
     border-radius: 3px;
 }
@@ -191,7 +190,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-/* Стили для footer */
+
 footer {
     background-color: #333;
     color: #fff;
@@ -202,17 +201,17 @@ footer {
 
 .virtual-tour {
     padding: 60px 0;
-    background-color: #f9f9f9; /* Другой фон */
+    background-color: #f9f9f9; 
     text-align: center;
 }
 
 .virtual-tour-container {
     width: 100%;
-    max-width: 1000px; /* Возможно, другая максимальная ширина */
+    max-width: 1000px; 
     margin: 20px auto;
     position: relative;
-    /* Используйте padding-bottom для адаптивной высоты */
-    padding-bottom: 65%; /* Например, соотношение сторон 4:3 (3/4 * 100%) или другое, в зависимости от тура */
+    
+    padding-bottom: 65%; 
     height: 0;
     overflow: hidden;
     border-radius: 8px;
@@ -230,7 +229,7 @@ footer {
 
 .contact-info {
     padding: 60px 0;
-    background-color: #f8f8f8; /* Или выберите цвет, который подходит вашему дизайну */
+    background-color: #f8f8f8; 
     text-align: center;
 }
 
@@ -243,7 +242,7 @@ footer {
 .contact-info h2 {
     margin-bottom: 40px;
     font-size: 32px;
-    color: #333; /* Или выберите цвет, который подходит вашему дизайну */
+    color: #333; 
 }
 
 .contact-grid {
@@ -254,7 +253,7 @@ footer {
 }
 
 .contact-item {
-    background-color: #fff; /* Или выберите цвет, который подходит вашему дизайну */
+    background-color: #fff; 
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -269,30 +268,30 @@ footer {
 
 .contact-item i {
     font-size: 40px;
-    color: #007bff; /* Или выберите цвет, который подходит вашему бренду */
+    color: #007bff; 
     margin-bottom: 15px;
 }
 
 .contact-item h3 {
     font-size: 22px;
     margin-bottom: 10px;
-    color: #555; /* Или выберите цвет, который подходит вашему дизайну */
+    color: #555; 
 }
 
 .contact-item p {
     font-size: 16px;
     line-height: 1.6;
-    color: #666; /* Или выберите цвет, который подходит вашему дизайну */
+    color: #666; 
 }
 
 .contact-item a {
-    color: #007bff; /* Или выберите цвет, который подходит вашему бренду */
+    color: #007bff; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #0056b3; /* Цвет при наведении */
+    color: #0056b3; 
     text-decoration: underline;
 }
 
@@ -346,7 +345,7 @@ footer {
     }
 
     .hero {
-        height: 400px; /* Меньшая высота на мобильных */
+        height: 400px; 
     }
 
     .hero h1 {
@@ -354,7 +353,7 @@ footer {
     }
 
     nav ul {
-        flex-direction: column; /* Навигация в столбец на мобильных */
+        flex-direction: column; 
         text-align: center;
         margin-top: 10px;
     }
@@ -364,6 +363,8 @@ footer {
     }
 
     .exhibition-list {
-        grid-template-columns: 1fr; /* Одна колонка на мобильных */
+        grid-template-columns: 1fr; 
     }
+    
+
 }

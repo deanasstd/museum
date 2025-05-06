@@ -392,3 +392,6 @@ footer {
         border-color: #8B4513; 
     }
 }
+#hidden-about-text {
+    display: none;
+}
